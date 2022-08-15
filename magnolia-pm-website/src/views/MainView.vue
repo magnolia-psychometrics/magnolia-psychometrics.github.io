@@ -15,7 +15,7 @@ import FooterComponent from "../components/FooterComponent.vue";
 <template>
   <div class="flex flex-col h-screen w-screen overflow-hidden">
     <HeaderComponent />
-    <main class="flex-1 overflow-y-scroll">
+    <main class="flex-1 overflow-y-scroll scroll-smooth">
       <HeroSection />
       <FundingSectionDivider />
       <IoServiceSection />

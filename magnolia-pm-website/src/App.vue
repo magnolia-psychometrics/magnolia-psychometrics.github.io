@@ -9,7 +9,7 @@ import MainView from "./views/MainView.vue";
 
 <template>
   <!-- <RouterView /> -->
-  <div class="wrapper">    
+  <div class="wrapper">
     <MainView />
   </div>
 </template>

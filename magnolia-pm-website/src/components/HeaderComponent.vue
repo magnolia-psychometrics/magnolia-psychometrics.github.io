@@ -125,7 +125,7 @@ export default {
           >
             <div class="p-2 text-left" role="none">
               <a
-                href="#"
+                href="#io-service-section"
                 class="
                   text-neutral-900
                   font-semibold
@@ -141,7 +141,7 @@ export default {
                 >Personal- und Eignungsdiagnostik
               </a>
               <a
-                href="#"
+                href="#psychometric-service-section"
                 class="
                   text-neutral-900
                   font-semibold
@@ -157,7 +157,7 @@ export default {
                 >Psychometrische Dienstleistungen
               </a>
               <a
-                href="#"
+                href="#various-service-section"
                 class="
                   text-neutral-900
                   font-semibold
@@ -173,7 +173,7 @@ export default {
                 >Beratung & Audits
               </a>
               <a
-                href="#"
+                href="#various-service-section"
                 class="
                   text-neutral-900
                   font-semibold
@@ -189,7 +189,7 @@ export default {
                 >Software-Entwicklung
               </a>
               <a
-                href="#"
+                href="#various-service-section"
                 class="
                   text-neutral-900
                   font-semibold
@@ -211,8 +211,6 @@ export default {
         <button
           class="
             p-2
-            text-white
-            font-semibold
             tracking-wide
             border-2
             relative
@@ -220,7 +218,9 @@ export default {
             hover:underline hover:decoration-2 hover:underline-offset-2
           "
         >
-          Kostenlose Beratung
+          <a href="#ContactSection" class="text-white font-semibold"
+            >Kostenloses Erstgespräch</a
+          >
         </button>
         <!-- <h1 class="text-white text-2xl">right!</h1> -->
       </div>

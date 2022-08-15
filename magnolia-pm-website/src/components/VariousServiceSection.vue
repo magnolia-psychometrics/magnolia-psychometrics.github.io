@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-stone-50 w-full px-40 pt-10 pb-20">
+  <div class="bg-stone-50 w-full px-40 pt-10 pb-20" id="various-service-section">
     <h1 class="text-neutral-900 text-4xl font-black leading-relaxed mb-10">
       In weiteren Fragen...
     </h1>
