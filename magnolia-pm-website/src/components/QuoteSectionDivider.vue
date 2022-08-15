@@ -11,7 +11,7 @@
       "
     >
       <span class="text-pink-500 font-black">&ldquo;</span>
-      <span>We have not yet seen what man can make of man</span>
+      <span>{{ $t("message.sections.quote.text") }}</span>
       <span class="text-pink-500 font-black">&rdquo;</span>
       &#8211;
       <span class="text-neutral-900 italic text-3xl font-light"

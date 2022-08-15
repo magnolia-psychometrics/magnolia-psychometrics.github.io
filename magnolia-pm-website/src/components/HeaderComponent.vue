@@ -2,13 +2,14 @@
 export default {
   data() {
     return {
-      showServiceMenu: false,
+      selectedLang: this.$i18n.locale.toUpperCase(),
     };
   },
 
   methods: {
-    increment() {
-      this.count++;
+    setLanguage(lang) {
+      this.$i18n.locale = lang;
+      this.selectedLang = lang.toUpperCase();
     },
   },
 };
@@ -32,7 +33,7 @@ export default {
                 relative
                 inline-block
               "
-              >DE</span
+              >{{ this.selectedLang }}</span
             ><span class="ml-1 font-material text-lg font-semibold text-white"
               >expand_more</span
             >
@@ -68,6 +69,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
+                @click="setLanguage('de')"
                 >Deutsch
               </a>
               <a
@@ -84,6 +86,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
+                @click="setLanguage('en')"
                 >English
               </a>
             </div>
@@ -101,7 +104,7 @@ export default {
                 relative
                 inline-block
               "
-              >Dienstleistungen</span
+              >{{ $t("message.navbar.services.title") }}</span
             ><span class="ml-1 font-material text-lg font-semibold text-white"
               >expand_more</span
             >
@@ -138,7 +141,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
-                >Personal- und Eignungsdiagnostik
+                >{{ $t("message.navbar.services.io") }}
               </a>
               <a
                 href="#psychometric-service-section"
@@ -154,7 +157,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
-                >Psychometrische Dienstleistungen
+                >{{ $t("message.navbar.services.psychometric") }}
               </a>
               <a
                 href="#various-service-section"
@@ -170,7 +173,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
-                >Beratung & Audits
+                >{{ $t("message.navbar.services.consulting") }}
               </a>
               <a
                 href="#various-service-section"
@@ -186,7 +189,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
-                >Software-Entwicklung
+                >{{ $t("message.navbar.services.software") }}
               </a>
               <a
                 href="#various-service-section"
@@ -202,7 +205,7 @@ export default {
                   hover:decoration-teal-400
                   hover:underline-offset-4
                 "
-                >Workshops & Training
+                >{{ $t("message.navbar.services.workshops") }}
               </a>
             </div>
           </div>
@@ -218,9 +221,9 @@ export default {
             hover:underline hover:decoration-2 hover:underline-offset-2
           "
         >
-          <a href="#ContactSection" class="text-white font-semibold"
-            >Kostenloses Erstgespräch</a
-          >
+          <a href="#ContactSection" class="text-white font-semibold">{{
+            $t("message.navbar.contact_us")
+          }}</a>
         </button>
         <!-- <h1 class="text-white text-2xl">right!</h1> -->
       </div>

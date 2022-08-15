@@ -1,15 +1,16 @@
 <template>
-  <div class="bg-stone-50 w-full px-40 pt-10 pb-20" id="psychometric-service-section">
+  <div
+    class="bg-stone-50 w-full px-40 pt-10 pb-20"
+    id="psychometric-service-section"
+  >
     <!-- <h1 class="text-neutral-900 text-2xl font-black">
       Unsere Dienstleistungen
     </h1> -->
     <h1 class="text-neutral-900 text-4xl font-black leading-relaxed">
-      Psychometrische Dienstleistungen
+      {{ $t("message.sections.psychometric.title") }}
     </h1>
     <p class="text-neutral-900 text-xl font-medium leading-normal mb-10">
-      Manche Entscheidungen sind einfach zu wichtig, um sie allein aus dem Bauch
-      heraus zu treffen. Um Sie in diesen Fragen zu unterstützen, setzen unsere
-      nach
+      {{ $t("message.sections.psychometric.leading.start") }}
       <a
         class="
           underline underline-offset-4
@@ -20,10 +21,7 @@
         target="_blank_blank"
         >DIN 33430</a
       >
-      zertifizierten Expertinnen und Experten auf wissenschaftlich abgesicherte
-      Instrumente der psychologischen Diagnostik. Dies bietet nicht nur eine
-      objektive Grundlage für ihre Urteilsfindung, sondern vor allem auch
-      Rechtssicherheit.
+      {{ $t("message.sections.psychometric.leading.end") }}
     </p>
 
     <div class="w-full flex flex-col xl:flex-row gap-8 justify-center">
@@ -57,20 +55,10 @@
               decoration-4
               underline-offset-4
             "
-            >Individual- und Management-Diagnostik</span
+            >{{ $t("message.sections.psychometric.diagnostics.title") }}</span
           >
           <p class="text-neutral-900 text-lg font-medium leading-normal my-2">
-            Unter psychologischer Diagnostik versteht man die Beurteilung der
-            psychologischen Funktionsweise einer Person. Dies kann auf
-            verschiedene Weise geschehen, z. B. durch Befragung, Beobachtung und
-            standardisierte Tests. Ziel der psychologischen Diagnostik ist es
-            oftmals, ein umfassendes Bild der psychologischen Stärken und
-            Schwächen einer Person zu vermitteln, um ihr zu helfen, ihr volles
-            Potenzial zu entfalten, oder um zukünftiges Verhalten vorherzusagen.
-            Um solche Fragestellungen zu beantworten, unterstützen unsere
-            Diagnostikerinnen und Diagnostiker Sie durch die ganzheitliche
-            Begutachtung im Kontext der Einzel-, Gruppen- oder
-            Managementdiagnostik.
+            {{ $t("message.sections.psychometric.diagnostics.text") }}
           </p>
         </div>
       </div>
@@ -104,18 +92,10 @@
               decoration-4
               underline-offset-4
             "
-            >Psychometrische Testentwicklung</span
+            >{{ $t("message.sections.psychometric.test_dev.title") }}</span
           >
           <p class="text-neutral-900 text-lg font-medium leading-normal my-2">
-            Es gibt zahlreiche Fälle, in denen Tests auf bestimmte Zielgruppen
-            oder Messziele zugeschnitten werden müssen, oder in denen eine
-            proprietäre Nutzung durch unsere Klienten ausdrücklich erwünscht
-            ist. Zu diesen Zwecken bieten wir kundenspezifische
-            Testkonstruktionen nach den wissenschaftlichen Standards der
-            klassischen Testtheorie (CTT) und Item-Response Theorie (IRT). Die
-            Entwicklung von Verfahren in den Kategorien Persönlichkeits-,
-            Leistungs-, Wissens- und Interessentests findet hierbei in der
-            Kooperation mit der Universität Leipzig statt.
+            {{ $t("message.sections.psychometric.test_dev.text") }}
           </p>
         </div>
       </div>

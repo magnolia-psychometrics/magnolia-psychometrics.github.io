@@ -3,7 +3,7 @@
     <div class="flex flex-col lg:flex-row gap-10">
       <div class="h-full w-full">
         <h1 class="text-neutral-900 text-4xl font-black leading-relaxed">
-          Kontakt
+          {{ $t("message.sections.contact.title") }}
         </h1>
         <p class="text-neutral-900 text-xl font-bold">
           magnolia psychometrics GmbH
@@ -12,10 +12,10 @@
           Peterssteinweg 14, DE-04107 Leipzig
         </p>
         <p class="text-neutral-900 text-xl font-base">
-          Telefon: +49 (0)341 / 98 97 71 07
+          {{ $t("message.sections.contact.phone") }}: +49 (0)341 / 98 97 71 07
         </p>
         <p class="text-neutral-900 text-xl font-base">
-          E-Mail:
+          {{ $t("message.sections.contact.email") }}:
           <a
             class="text-pink-500 font-semibold hover:underline"
             href="mailto:contact@magnolia-psychometrics.com"
@@ -43,7 +43,7 @@
             "
             id=""
             type="text"
-            placeholder="Vor- und Nachname"
+            :placeholder="this.$t('message.sections.contact.form.name')"
           />
           <input
             class="
@@ -63,7 +63,7 @@
             "
             id=""
             type="text"
-            placeholder="E-Mail Adresse"
+            :placeholder="this.$t('message.sections.contact.form.email')"
           />
           <input
             class="
@@ -83,7 +83,7 @@
             "
             id=""
             type="text"
-            placeholder="ggf. Firma / Organisation"
+            :placeholder="this.$t('message.sections.contact.form.company')"
           />
 
           <textarea
@@ -104,7 +104,7 @@
               h-48
               focus:outline-none
             "
-            placeholder="Wie können wir Ihnen helfen?"
+            :placeholder="this.$t('message.sections.contact.form.text')"
           ></textarea>
           <button
             class="
@@ -117,7 +117,7 @@
               px-4
             "
           >
-            Jetzt Kontakt aufnehmen!
+            {{ $t("message.sections.contact.form.button") }}
           </button>
         </form>
       </div>

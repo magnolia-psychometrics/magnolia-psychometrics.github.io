@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-stone-50 w-full px-40 pt-10 pb-20" id="various-service-section">
+  <div
+    class="bg-stone-50 w-full px-40 pt-10 pb-20"
+    id="various-service-section"
+  >
     <h1 class="text-neutral-900 text-4xl font-black leading-relaxed mb-10">
-      In weiteren Fragen...
+      {{ $t("message.sections.various.title") }}
     </h1>
     <div class="grid grid-cols-3 gap-4">
       <!-- left -->
@@ -17,13 +20,10 @@
             decoration-4
             underline-offset-4
           "
-          >Beratung & Audits</span
+          >{{ $t("message.sections.various.consulting.title") }}</span
         >
         <p class="text-neutral-900 text-xl text-center mt-4">
-          Wir begleiten Sie durch strategischen Beratung und Planung von
-          menschenzentrierten HR-Prozessen. Auf Anfrage können zertifizierte
-          arbeitspsychologische Gutachten zu expliziten Fragestellungen
-          bereitgestellt werden.
+          {{ $t("message.sections.various.consulting.text") }}
         </p>
       </div>
 
@@ -39,13 +39,10 @@
             decoration-4
             underline-offset-4
           "
-          >Software-Entwicklung</span
+          >{{ $t("message.sections.various.software.title") }}</span
         >
         <p class="text-neutral-900 text-xl text-center mt-4">
-          Für datengetriebene Einblicke in Key Performance Indicators Ihrer
-          Personalprozesse bieten wir Ihnen nach Möglichkeit eine Entwicklung
-          kleinerer People-Analytics-Systeme und Dashboards an. Projekte
-          erfolgen in Zusammenarbeit mit dem
+          {{ $t("message.sections.various.software.text") }}
           <a
             class="
               underline underline-offset-4
@@ -71,13 +68,10 @@
             decoration-4
             underline-offset-4
           "
-          >Workshops & Training</span
+          >{{ $t("message.sections.various.workshops.title") }}</span
         >
         <p class="text-neutral-900 text-xl text-center mt-4">
-          Aktuell bieten wir Data Science Workshops, Seminare und Kurse in R und
-          Python in folgenden Bereichen an: Grundlagen der Datenverarbeitung;
-          Grundlagen der deskriptiven, induktiven und explorativen Statistik;
-          psychometrische Item- und Skalenanalyse (CTT/IRT).
+          {{ $t("message.sections.various.workshops.text") }}
         </p>
       </div>
     </div>
