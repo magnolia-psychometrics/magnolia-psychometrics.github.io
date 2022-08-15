@@ -7,10 +7,9 @@ import MainView from "./views/MainView.vue";
 // import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
-<template>
-  <!-- <RouterView /> -->
+<template>  
   <div class="wrapper">
-    <MainView />
+    <RouterView />
   </div>
 </template>
 
