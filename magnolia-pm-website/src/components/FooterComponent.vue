@@ -1,7 +1,7 @@
 <template>
   <footer class="w-full bg-slate-900 flex flex-col items-center pt-14 pb-4">
-    <div class="w-2/3 grid grid-cols-6 gap-6 mb-6">
-      <div class="w-full col-start-6">
+    <div class="w-2/3 grid grid-cols-1 gap-2 xl:grid-cols-6 xl:gap-6 mb-6">
+      <div class="w-full xl:col-start-6">
         <span
           class="text-stone-50 font-bold uppercase text-base tracking-wide"
           >{{ $t("message.sections.footer.legal.title") }}</span

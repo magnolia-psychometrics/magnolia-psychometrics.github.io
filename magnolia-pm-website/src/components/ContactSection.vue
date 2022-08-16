@@ -1,6 +1,9 @@
 <template>
-  <div class="bg-stone-50 w-full px-40 pt-10 pb-20" id="ContactSection">
-    <div class="flex flex-col lg:flex-row gap-10">
+  <div
+    class="bg-stone-50 w-full px-10 xl:px-40 pt-10 pb-20"
+    id="ContactSection"
+  >
+    <div class="flex flex-col xl:flex-row gap-10">
       <div class="h-full w-full">
         <h1 class="text-neutral-900 text-4xl font-black leading-relaxed">
           {{ $t("message.sections.contact.title") }}
@@ -115,7 +118,9 @@
               font-bold
               py-1
               px-4
+              cursor-not-allowed
             "
+            disabled
           >
             {{ $t("message.sections.contact.form.button") }}
           </button>

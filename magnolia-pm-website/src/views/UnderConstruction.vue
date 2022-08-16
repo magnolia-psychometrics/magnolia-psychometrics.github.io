@@ -40,11 +40,12 @@ import FooterComponent from "../components/FooterComponent.vue";
     </header>
 
     <main class="flex-1 overflow-y-scroll scroll-smooth">
-      <div class="bg-magnolia-blue h-screen w-full px-20 pt-10">
+      <div class="bg-magnolia-blue h-screen w-full px-8 lg:px-20 pt-10">
         <h1 class="text-white text-6xl font-black">
           We're currently polishing things up...
+
         </h1>
-        <h2 class="text-white text-4xl font-black">...please check back soon :)</h2>
+        <h2 class="text-white text-4xl font-black mt-4">...please check back soon :)</h2>
       </div>
       <FundingSectionDivider />
       <!-- <IoServiceSection />
